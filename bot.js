@@ -1041,16 +1041,6 @@ Servers Counter : __${client.guilds.size}__**`)
 
 
 
-client.on("ready", () => {
-    setInterval(function(){
-        client.guilds.get("496257773529595906").roles.find("name", "Rainbow").edit({
-            color : "RANDOM"
-        });
-    }, 600)
-});
-
-
-
 
 
 client.on("message", (message) => {

@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "-";
-const adminprefix = "-";
-const devs = ['252813587188416512'];
+const adminprefix = "!@#$%^&*()";
+const devs = ['259750207321931777'];
 client.on('ready', () => {
   client.user.setGame('Type -help','https://www.twitch.tv/peery13');
   console.log('---------------');
@@ -892,11 +892,11 @@ client.on('message', (message) => {
 
 
   client.on("guildCreate", guild => {
-client.channels.get("492272547828596736").send(' ***  BOT  ***   **Join To**   ***[ ' + `${guild.name}` + ' ]***   ,   **  Owner  **  ' + ' ***[ ' + '<@' + `${guild.owner.user.id}` + '>' + ' ]***  **|**  ***[ ' + '<' + `${guild.owner.user.username}` + '>' + ' ]***')
+client.channels.get("259750207321931777").send(' ***  BOT  ***   **Join To**   ***[ ' + `${guild.name}` + ' ]***   ,   **  Owner  **  ' + ' ***[ ' + '<@' + `${guild.owner.user.id}` + '>' + ' ]***  **|**  ***[ ' + '<' + `${guild.owner.user.username}` + '>' + ' ]***')
 });
 
 client.on("guildDelete", guild => {
-client.channels.get("492272547828596736").send(' ***  BOT  ***   **Leave From**   ***[ ' + `${guild.name}` + ' ]***   ,   **  Owner  **  ' + ' ***[ ' + '<@' + `${guild.owner.user.id}` + '>' + ' ]***  **|**  ***[ ' + '<' + `${guild.owner.user.username}` + '>' + ' ]***')
+client.channels.get("259750207321931777").send(' ***  BOT  ***   **Leave From**   ***[ ' + `${guild.name}` + ' ]***   ,   **  Owner  **  ' + ' ***[ ' + '<@' + `${guild.owner.user.id}` + '>' + ' ]***  **|**  ***[ ' + '<' + `${guild.owner.user.username}` + '>' + ' ]***')
 });
   
 
@@ -977,7 +977,7 @@ if(!message.channel.guild) return;
 
 
 client.on('guildDelete', guild => {
-  client.channels.get("492272547828596736")
+  client.channels.get("259750207321931777")
 const embed = new Discord.RichEmbed()
    .setAuthor(`Server Manager Bot left a server ❎`)
    .setDescription(`**
@@ -988,14 +988,14 @@ Members Count: __${guild.memberCount}__
 Servers Counter : __${client.guilds.size}__**`)
          .setColor("#f3ae10")
          .setFooter('Server Manager' , client.user.avatarURL)
-           client.channels.get("492272547828596736").send({embed});
+           client.channels.get("259750207321931777").send({embed});
 }
 
 );
 
 client.on('guildCreate', guild => {
     
-  client.channels.get("492272547828596736")
+  client.channels.get("259750207321931777")
 const embed = new Discord.RichEmbed()
    .setAuthor(`بوتك دخل سيرفر جديد مبروك ✅`)
    .setDescription(`**
@@ -1007,7 +1007,7 @@ Servers Counter : __${client.guilds.size}__**`)
          .setColor("#f3ae10")
          .addField("New Server!")
          .setFooter('Server Manager' , client.user.avatarURL)
-           client.channels.get("492272547828596736").send({embed});
+           client.channels.get("259750207321931777").send({embed});
 }
 
 );
